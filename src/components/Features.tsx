@@ -25,9 +25,9 @@ const features: FeatureProps[] = [
     image: lookingAhead,
   },
   {
-    title: "AI Cover Letter Generator",
+    title: "AI Cover Letter And Resume Generator",
     description:
-      "Instantly generate customized cover letters tailored to your resume and job descriptions.",
+      "Instantly generate customized cover letters and Resume tailored to your resume and job descriptions.",
     image: reflecting,
   },
   {

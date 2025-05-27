@@ -42,7 +42,7 @@ export const HeroCards = () => {
         </CardHeader>
         <hr className="w-4/5 m-auto mb-4" />
         <CardFooter className="flex flex-col gap-3 mt-4 items-start">
-          {["Track Applications", "Generate Cover Letters", "Progress Overview"].map((item) => (
+          {["Track Applications", "Progress Overview"].map((item) => (
             <span key={item} className="flex items-center">
               <Check className="text-green-500 w-4 h-4" />
               <span className="ml-2">{item}</span>
