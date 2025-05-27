@@ -16,13 +16,13 @@ export const Hero = () => {
           with {" "}
           <h2 className="inline">
             <span className="bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              AutoTrack
+              JobCrate
             </span>
           </h2>
         </div>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          AutoTrack helps you organize, automate, and optimize your job hunt — all in one beautiful dashboard.
+          JobCrate helps you organize, automate, and optimize your job hunt — all in one beautiful dashboard.
         </p>
 
       </div>

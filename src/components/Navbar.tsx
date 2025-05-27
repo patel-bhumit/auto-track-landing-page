@@ -46,7 +46,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex items-center gap-2"
             >
               <img src={LogoIcon} alt="Logo" className="size-12" /> 
-              AutoTrack
+              JobCrate
             </a>
           </NavigationMenuItem>
 
@@ -59,7 +59,7 @@ export const Navbar = () => {
               </SheetTrigger>
               <SheetContent side="left">
                 <SheetHeader>
-                  <SheetTitle className="font-bold text-xl">AutoTrack</SheetTitle>
+                  <SheetTitle className="font-bold text-xl">JobCrate</SheetTitle>
                 </SheetHeader>
                 <div className="mt-6 space-y-2">
                   <a

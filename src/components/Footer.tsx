@@ -13,10 +13,10 @@ export const Footer = () => {
             className="font-bold text-xl flex items-center gap-2"
           >
             <img src={LogoIcon} alt="Logo" className="size-12" /> 
-            AutoTrack
+            JobCrate
           </a>
           <p className="text-muted-foreground text-sm">
-            AutoTrack is a job application tracker designed for clarity, speed, and growth. Stay organized, stay consistent — and land that offer.
+            JobCrate is a job application tracker designed for clarity, speed, and growth. Stay organized, stay consistent — and land that offer.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center text-sm text-muted-foreground">
         <p>
-          &copy; {new Date().getFullYear()} AutoTrack. Built with ❤️ using ShadCN + React.
+          &copy; {new Date().getFullYear()} JobCrate. Built with ❤️ using ShadCN + React.
         </p>
       </section>
     </footer>

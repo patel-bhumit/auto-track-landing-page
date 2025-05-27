@@ -52,7 +52,7 @@ export const Services = () => {
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8">
-            AutoTrack is packed with tools that remove friction from your job search. Spend less time organizing — and more time applying.
+            JobCrate is packed with tools that remove friction from your job search. Spend less time organizing — and more time applying.
           </p>
 
           <div className="flex flex-col gap-8">
@@ -77,7 +77,7 @@ export const Services = () => {
         <img
           src={cubeLeg}
           className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
-          alt="AutoTrack dashboard illustration"
+          alt="JobCrate dashboard illustration"
         />
       </div>
     </section>
