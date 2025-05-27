@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 
 export const Cta = () => {
   return (
@@ -20,10 +20,10 @@ export const Cta = () => {
           </p>
         </div>
 
-        <div className="space-y-4 lg:col-start-2">
-          <Button className="w-full md:mr-4 md:w-auto">
-            Get Started for Free
-          </Button>
+        <div className="space-y-4 lg:col-start-2 ">
+            <a href="https://dashboard.jobcrate.net" className={`border ${buttonVariants({ variant: "default" })} m-5 `} >
+             Get Started for Free
+            </a>
           <Button
             variant="outline"
             className="w-full md:w-auto"

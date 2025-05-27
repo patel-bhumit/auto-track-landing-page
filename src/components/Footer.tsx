@@ -24,7 +24,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Links</h3>
           <a href="#features" className="opacity-60 hover:opacity-100">Features</a>
-          <a href="#cta" className="opacity-60 hover:opacity-100">Get Started</a>
+          <a href="https://dashboard.jobcrate.net" className="opacity-60 hover:opacity-100">Get Started</a>
           <a className="opacity-60 cursor-not-allowed">FAQ (Coming Soon)</a>
         </div>
       </section>

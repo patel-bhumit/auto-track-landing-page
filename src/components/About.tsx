@@ -1,7 +1,5 @@
 // import { Statistics } from "./Statistics";
 import pilot from "../assets/pilot.png";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
 
 export const About = () => {
   return (
@@ -36,7 +34,7 @@ export const About = () => {
                 <li>Manage multiple resumes in one place</li>
               </ul>
 
-              <div className="flex gap-4 mt-8">
+              {/* <div className="flex gap-4 mt-8">
                 <Input
                   type="email"
                   placeholder="Enter your email"
@@ -45,7 +43,7 @@ export const About = () => {
                 <Button>
                   Notify Me
                 </Button>
-              </div>
+              </div> */}
             </div>
 
             {/* <Statistics /> */}
