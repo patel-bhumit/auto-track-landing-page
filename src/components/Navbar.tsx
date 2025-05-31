@@ -12,7 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -50,7 +49,7 @@ export const Navbar = () => {
             </a>
           </NavigationMenuItem>
 
-          {/* Mobile: GitHub + ModeToggle */}
+          {/* Mobile: Dashboard + ModeToggle */}
           <div className="flex md:hidden gap-2">
             <ModeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -63,13 +62,12 @@ export const Navbar = () => {
                 </SheetHeader>
                 <div className="mt-6 space-y-2">
                   <a
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                    target="_blank"
                     rel="noreferrer noopener"
-                    className={buttonVariants({ variant: "secondary" })}
+                    href="/"
+                    className="ml-2 font-bold text-xl flex items-center gap-2"
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    <img src={LogoIcon} alt="Logo" className="size-12" /> 
+                    JobCrate
                   </a>
                 </div>
               </SheetContent>
