@@ -60,16 +60,10 @@ export const Navbar = () => {
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">JobCrate</SheetTitle>
                 </SheetHeader>
-                <div className="mt-6 space-y-2">
-                  <a
-                    rel="noreferrer noopener"
-                    href="/"
-                    className="ml-2 font-bold text-xl flex items-center gap-2"
-                  >
-                    <img src={LogoIcon} alt="Logo" className="size-12" /> 
-                    JobCrate
-                  </a>
-                </div>
+                 <div className="hidden md:flex gap-2">
+                  <a href="https://dashboard.jobcrate.net" className={`border ${buttonVariants({ variant: "secondary" })}`}>Go to Dashboard</a>
+                    <ModeToggle />
+                  </div>
               </SheetContent>
             </Sheet>
           </div>
