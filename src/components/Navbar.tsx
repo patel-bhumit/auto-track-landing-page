@@ -53,17 +53,23 @@ export const Navbar = () => {
           <div className="flex md:hidden gap-2">
             <ModeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger className="px-2">
-                <Menu className="h-5 w-5" />
+              <SheetTrigger asChild>
+                <button className="px-2" aria-label="Open menu">
+                  <Menu className="h-5 w-5" />
+                </button>
               </SheetTrigger>
               <SheetContent side="left">
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">JobCrate</SheetTitle>
                 </SheetHeader>
-                 <div className="hidden md:flex gap-2">
-                  <a href="https://dashboard.jobcrate.net" className={`border ${buttonVariants({ variant: "secondary" })}`}>Go to Dashboard</a>
-                    <ModeToggle />
-                  </div>
+                <div className="flex flex-col gap-5 mt-4">
+                  <a
+                    href="https://dashboard.jobcrate.net"
+                    className={buttonVariants({ variant: "secondary", className: "border" })}
+                  >
+                    Go to Dashboard
+                  </a>
+                </div>
               </SheetContent>
             </Sheet>
           </div>
