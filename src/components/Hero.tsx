@@ -1,4 +1,3 @@
-
 import { HeroCards } from "./HeroCards";
 
 export const Hero = () => {
@@ -13,7 +12,7 @@ export const Hero = () => {
             </span>{" "}
             Job Application
           </h1>{" "}
-          with {" "}
+          with{" "}
           <h2 className="inline">
             <span className="bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
               JobCrate
@@ -23,8 +22,11 @@ export const Hero = () => {
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
           JobCrate helps you organize, automate, and optimize your job hunt — all in one beautiful dashboard.
+          <br />
+          <span className="font-semibold">
+            Discover new opportunities with our integrated job board and job search engine, then create tailored resumes and cover letters in seconds.
+          </span>
         </p>
-
       </div>
 
       {/* Right Cards Section */}
@@ -35,5 +37,5 @@ export const Hero = () => {
       {/* Optional Background Shadow */}
       <div className="shadow" />
     </section>
-  );
-};
+  )
+}
