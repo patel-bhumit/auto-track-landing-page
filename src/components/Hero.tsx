@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 import { ArrowRight, ShieldCheck, Star } from "lucide-react";
+=======
+>>>>>>> 3dbcb55d70ecdbcb1d8f8d43dbf2466f4e73c7c9
 import { HeroCards } from "./HeroCards";
 import { buttonVariants } from "./ui/button";
 
@@ -15,7 +18,7 @@ export const Hero = () => {
             </span>{" "}
             Job Application
           </h1>{" "}
-          with {" "}
+          with{" "}
           <h2 className="inline">
             <span className="bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
               JobCrate
@@ -25,7 +28,12 @@ export const Hero = () => {
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
           JobCrate helps you organize, automate, and optimize your job hunt — all in one beautiful dashboard.
+          <br />
+          <span className="font-semibold">
+            Discover new opportunities with our integrated job board and job search engine, then create tailored resumes and cover letters in seconds.
+          </span>
         </p>
+<<<<<<< HEAD
 
         <div className="mt-6 space-y-4">
       {/* Primary CTAs */}
@@ -59,6 +67,8 @@ export const Hero = () => {
       </div>
     </div>
 
+=======
+>>>>>>> 3dbcb55d70ecdbcb1d8f8d43dbf2466f4e73c7c9
       </div>
 
       {/* Right Cards Section */}
@@ -75,5 +85,5 @@ export const Hero = () => {
       </div>
 
     </section>
-  );
-};
+  )
+}
