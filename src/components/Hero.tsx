@@ -64,7 +64,7 @@ export const Hero = () => {
     </div>
 
     <div className="flex sm:flex md:flex relative lg:hidden h-24 overflow-hidden marquee-paused fade-edges rounded-lg">
-        <div className="absolute left-0 top-0 flex space-x-4 animate-marquee">
+      <div className="absolute left-0 top-0 flex space-x-4 animate-marquee">
           {testimonials.concat(testimonials).map((t, i) => (
             <div
               key={i}
@@ -74,8 +74,8 @@ export const Hero = () => {
               <p className="text-xs mt-2 font-medium">– {t.name}, {t.role}</p>
             </div>
           ))}
-        </div>
       </div>
+    </div>
 
 
     </div>

@@ -65,15 +65,26 @@ html {
   }
 }
 
-/* globals.css */
-@keyframes marquee { 0% {transform: translateX(0)} 100% {transform: translateX(-50%)} }
-.animate-marquee { animation: marquee 22s linear infinite; }
-.marquee-paused:hover .animate-marquee { animation-play-state: paused; }
-.fade-edges::before,
-.fade-edges::after {
-  content: "";
-  position: absolute; top: 0; bottom: 0; width: 64px; pointer-events: none;
+/* Smooth, non-janky marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
-.fade-edges::before { left: 0; background: linear-gradient(90deg, rgba(0,0,0,0.6), transparent); }
-.fade-edges::after { right: 0; background: linear-gradient(270deg, rgba(0,0,0,0.6), transparent); }
+.animate-marquee { animation: marquee 18s linear infinite; }
+
+/* Pause only on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+  .hero-fade-mask:hover .animate-marquee { animation-play-state: paused; }
+}
+
+/* Edge fade using a mask (no overflow from pseudo-elements) */
+.hero-fade-mask {
+  -webkit-mask-image: linear-gradient(to right,
+    transparent, black 48px, black calc(100% - 48px), transparent);
+          mask-image: linear-gradient(to right,
+    transparent, black 48px, black calc(100% - 48px), transparent);
+}
+
+/* Optional final guard to kill any page-wide horizontal scroll */
+html, body { overflow-x: clip; }
 
