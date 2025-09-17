@@ -1,11 +1,11 @@
 
 import { ArrowRight, ShieldCheck, Star } from "lucide-react";
-import { HeroCards } from "./HeroCards";
+import { HeroCards, testimonials } from "./HeroCards";
 import { buttonVariants } from "./ui/button";
 
 export const Hero = () => {
   return (
-    <section className="relative h-full container grid lg:grid-cols-2 place-items-center py-12 sm:py-16 md:py-24 lg:py-32">
+    <section className="relative h-full container grid lg:grid-cols-2 place-items-center mb-12 py-12 sm:py-16 md:py-24 lg:py-32">
       {/* Left Text Content */}
       <div className="text-center lg:text-start space-y-6 md:space-y-8">
         <div className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
@@ -63,13 +63,29 @@ export const Hero = () => {
       </div>
     </div>
 
+    <div className="flex sm:flex md:flex relative lg:hidden h-24 overflow-hidden marquee-paused fade-edges rounded-lg">
+        <div className="absolute left-0 top-0 flex space-x-4 animate-marquee">
+          {testimonials.concat(testimonials).map((t, i) => (
+            <div
+              key={i}
+              className="min-w-[260px] bg-background/80 border rounded-xl p-3 shadow-sm"
+            >
+              <p className="text-sm italic">"{t.quote}"</p>
+              <p className="text-xs mt-2 font-medium">– {t.name}, {t.role}</p>
+            </div>
+          ))}
+        </div>
       </div>
+
+
+    </div>
 
       {/* Right Cards Section */}
       <div className="z-10">
         <HeroCards />
       </div>
 
+      
       {/* Optional Background Shadow */}
       <div className="shadow" />
       {/* // Put these inside your hero container wrapper (position: relative) */}

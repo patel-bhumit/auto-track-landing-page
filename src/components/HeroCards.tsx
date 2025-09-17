@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Check, Clock, Quote, ShieldCheck } from "lucide-react";
 
-const testimonials = [
+export const testimonials = [
   { name: "Alex M.", role: "Recent Graduate", quote: "JobCrate helped me land my first interview in under 2 weeks." },
   { name: "Sarah L.", role: "Marketing Associate", quote: "The AI cover letters save me so much time—game changer." },
   { name: "Daniel K.", role: "Frontend Developer", quote: "Tracking applications has never been this simple or motivating." },
