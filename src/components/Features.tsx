@@ -63,10 +63,10 @@ export function Features() {
 
   return (
     <>
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 mt-20">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-10 mt-16 sm:mt-20">
         Features
     </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative z-10 py-6 sm:py-10 max-w-7xl mx-auto px-4 sm:px-6">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
@@ -89,9 +89,8 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
-        (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
-        index < 4 && "lg:border-b dark:border-neutral-800"
+        "flex flex-col p-6 relative group/feature rounded-lg border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors",
+        "bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm"
       )}
     >
       {index < 4 && (

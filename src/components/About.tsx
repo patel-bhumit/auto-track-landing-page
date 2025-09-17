@@ -7,12 +7,12 @@ export const About = () => {
       id="about"
       className="container py-24 sm:py-32"
     >
-      <div className="bg-muted/50 border rounded-lg py-12">
-        <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
+      <div className="bg-muted/50 border rounded-lg py-8 sm:py-12">
+        <div className="px-4 sm:px-6 flex flex-col-reverse md:flex-row gap-6 sm:gap-8 md:gap-12">
           <img
             src={pilot}
-            alt="JobCrate Preview"
-            className="w-[300px] object-contain rounded-lg"
+            alt="AutoTrack Preview"
+            className="w-full md:w-[300px] max-w-[300px] mx-auto object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
             <div className="pb-6">

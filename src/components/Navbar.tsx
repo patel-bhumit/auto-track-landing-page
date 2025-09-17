@@ -42,10 +42,10 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex items-center gap-2"
+              className="ml-2 font-bold text-lg md:text-xl flex items-center gap-2"
             >
-              <img src={LogoIcon} alt="Logo" className="size-12" /> 
-              JobCrate
+              <img src={LogoIcon} alt="Logo" className="size-8 md:size-12" /> 
+              AutoTrack
             </a>
           </NavigationMenuItem>
 

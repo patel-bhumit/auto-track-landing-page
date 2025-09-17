@@ -1,17 +1,14 @@
-<<<<<<< HEAD
 
 import { ArrowRight, ShieldCheck, Star } from "lucide-react";
-=======
->>>>>>> 3dbcb55d70ecdbcb1d8f8d43dbf2466f4e73c7c9
 import { HeroCards } from "./HeroCards";
 import { buttonVariants } from "./ui/button";
 
 export const Hero = () => {
   return (
-    <section className="relative h-full container grid lg:grid-cols-2 place-items-center py-20 md:py-32 ">
+    <section className="relative h-full container grid lg:grid-cols-2 place-items-center py-12 sm:py-16 md:py-24 lg:py-32">
       {/* Left Text Content */}
-      <div className="text-center lg:text-start space-y-8">
-        <div className="text-5xl md:text-6xl font-extrabold leading-tight">
+      <div className="text-center lg:text-start space-y-6 md:space-y-8">
+        <div className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
           <h1 className="inline">
             <span className="bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
               Track Every
@@ -21,33 +18,32 @@ export const Hero = () => {
           with{" "}
           <h2 className="inline">
             <span className="bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              JobCrate
+              AutoTrack
             </span>
           </h2>
         </div>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          JobCrate helps you organize, automate, and optimize your job hunt — all in one beautiful dashboard.
+        <p className="text-lg sm:text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+          AutoTrack helps you organize, automate, and optimize your job hunt — all in one beautiful dashboard.
           <br />
           <span className="font-semibold">
             Discover new opportunities with our integrated job board and job search engine, then create tailored resumes and cover letters in seconds.
           </span>
         </p>
-<<<<<<< HEAD
 
-        <div className="mt-6 space-y-4">
+        <div className="mt-4 sm:mt-6 space-y-4">
       {/* Primary CTAs */}
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-col sm:flex-row gap-3">
         <a
-          href="https://dashboard.jobcrate.net"
-          className={buttonVariants({ variant: "default" }) + " group"}
+          href="/signup"
+          className={buttonVariants({ variant: "default", size: "lg" }) + " group w-full sm:w-auto"}
         >
           Start Free • No Card
           <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-0.5" />
         </a>
         <a
           href="/demo"
-          className={buttonVariants({ variant: "outline" })}
+          className={buttonVariants({ variant: "outline", size: "lg" }) + " w-full sm:w-auto"}
         >
           Watch 60s Demo
         </a>
@@ -67,8 +63,6 @@ export const Hero = () => {
       </div>
     </div>
 
-=======
->>>>>>> 3dbcb55d70ecdbcb1d8f8d43dbf2466f4e73c7c9
       </div>
 
       {/* Right Cards Section */}
