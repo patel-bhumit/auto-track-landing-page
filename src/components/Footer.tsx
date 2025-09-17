@@ -28,12 +28,6 @@ export const Footer = () => {
           <a className="opacity-60 cursor-not-allowed">FAQ (Coming Soon)</a>
         </div>
       </section>
-
-      <section className="container pb-14 text-center text-sm text-muted-foreground">
-        <p>
-          &copy; {new Date().getFullYear()} JobCrate. Built with ❤️ using ShadCN + React.
-        </p>
-      </section>
     </footer>
   );
 };

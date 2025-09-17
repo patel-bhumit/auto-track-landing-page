@@ -17,12 +17,14 @@ import "./App.css";
 function App() {
   return (
     <>
+      <div className="h-screen ">
       <Navbar />
       <Hero />
-      <About />
-      <HowItWorks />
+      </div>
       <Features />
       <Services />
+      <HowItWorks />
+      <About />
       <Cta />
       {/* <Testimonials /> */}
       {/* <Team /> */}

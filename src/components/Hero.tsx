@@ -1,9 +1,11 @@
 
+import { ArrowRight, ShieldCheck, Star } from "lucide-react";
 import { HeroCards } from "./HeroCards";
+import { buttonVariants } from "./ui/button";
 
 export const Hero = () => {
   return (
-    <section className="relative container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-16">
+    <section className="relative h-full container grid lg:grid-cols-2 place-items-center py-20 md:py-32 ">
       {/* Left Text Content */}
       <div className="text-center lg:text-start space-y-8">
         <div className="text-5xl md:text-6xl font-extrabold leading-tight">
@@ -25,6 +27,38 @@ export const Hero = () => {
           JobCrate helps you organize, automate, and optimize your job hunt — all in one beautiful dashboard.
         </p>
 
+        <div className="mt-6 space-y-4">
+      {/* Primary CTAs */}
+      <div className="flex flex-wrap gap-3">
+        <a
+          href="https://dashboard.jobcrate.net"
+          className={buttonVariants({ variant: "default" }) + " group"}
+        >
+          Start Free • No Card
+          <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-0.5" />
+        </a>
+        <a
+          href="/demo"
+          className={buttonVariants({ variant: "outline" })}
+        >
+          Watch 60s Demo
+        </a>
+      </div>
+
+      {/* Trust row */}
+      <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
+        <span className="inline-flex items-center gap-1">
+          <ShieldCheck className="w-4 h-4" />
+          GDPR-ready • Private by default
+        </span>
+        <span className="hidden sm:inline">•</span>
+        <span className="inline-flex items-center gap-1">
+          <Star className="w-4 h-4" />
+          Loved by 1,200+ job seekers
+        </span>
+      </div>
+    </div>
+
       </div>
 
       {/* Right Cards Section */}
@@ -34,6 +68,12 @@ export const Hero = () => {
 
       {/* Optional Background Shadow */}
       <div className="shadow" />
+      {/* // Put these inside your hero container wrapper (position: relative) */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-24 -right-20 h-72 w-72 rounded-full blur-3xl opacity-25 bg-gradient-to-br from-primary/40 via-fuchsia-500/30 to-cyan-400/30" />
+        <div className="absolute bottom-[-60px] left-[-40px] h-80 w-80 rounded-full blur-3xl opacity-20 bg-gradient-to-tr from-emerald-400/30 via-sky-500/30 to-primary/40" />
+      </div>
+
     </section>
   );
 };
