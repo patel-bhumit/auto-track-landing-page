@@ -35,7 +35,7 @@ export const Hero = () => {
       {/* Primary CTAs */}
       <div className="flex flex-col sm:flex-row gap-3">
         <a
-          href="/signup"
+          href="https://dashboard.autotrack.net"
           className={buttonVariants({ variant: "default", size: "lg" }) + " group w-full sm:w-auto"}
         >
           Start Free • No Card
